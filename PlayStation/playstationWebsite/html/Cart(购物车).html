@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<link href="../css/NewHeader.css" rel="stylesheet">
+<link rel="stylesheet" href="../iconfont/font/iconfont.css">
+<link rel="stylesheet" href="../css/CartBottom.css">
+
+<style type="text/css">
+    *{
+        margin: 0;padding: 0;
+    }
+    body{
+        width: 100%;
+    }
+    #cart{
+        width: 990px;
+        background: rgba(0,0,0,0.6);
+        padding: 16px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .CartHeader{
+         width: 990px;
+         height: 100px;
+         color: #FFFFFF;
+         font-size: 48px;
+         background: rgba(0,0,0,0.3);
+         margin: 0 auto;
+         padding: 27px 16px;
+         margin-top: 50px;
+     }
+    #pay{
+        width: 316px;
+        height: 280px;
+        padding: 10px;
+        background: #252D31;
+        float: right;
+    }
+    #pay>.Xz{
+        width: 296px;
+        height: 30px;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+    #total{
+        float: right;
+    }
+    #discount{
+        float: right;
+    }
+    #pay>.DZ{
+        height: 40px;
+    }
+    #pay>.DZ span{
+        height: 40px;
+        line-height: 40px;
+        font-size:16px;
+        color: #FFFFFF;
+    }
+    #newCount{
+        font-size: 28px;
+        color: #FFFFFF;
+        float: right;
+    }
+    #cartProduct{
+        width: 640px;
+        background: white;
+        height: 300px;
+        float: left;
+    }
+    #payBill{
+        width:300px;
+        height:40px;
+        background:#D6D6D6;
+        font-size:18px;
+        line-height: 40px;
+        margin: 10px auto;
+        text-align: center;
+        border: none;
+    }
+    #continueBuy{
+        width: 300px;
+        height: 40px;
+        background: #393e44;
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 40px;
+        margin: 10px auto;
+        text-align: center;
+        border: none;
+    }
+    #discountCode{
+        width: 300px;
+        height: 40px;
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 60px;
+    }
+    #disCountarrow{
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 60px;
+        float: right;
+    }
+</style>
+<script src="../js/naviAbs.js" type="text/javascript"></script>
+<body>
+                      <!-- --------顶部的固定定位的栏--------- -->
+    <div class="top">
+        <a>
+            <img alt="SONYLogo" src="https://www.playstation.com.cn/mobile/images/sony_logo.svg">
+        </a>
+    </div>
+    <div id="container">
+        <div id="logo">
+            <a href="">PlayStation.Store</a>
+        </div>
+        <div id="nav_R">
+            <div id="like">
+                <div id="god">
+                    <a href="">关注0</a>
+                    <div class="shu">|</div>
+                    <a href=""><i class="iconfont">&#xe60a;</i>0</a>
+                    <div class="shu">|</div>
+                    <div id="dropdown">
+
+                    </div>
+                </div>
+                <div id="sear">
+                    <input name="" placeholder="搜索" type="search" value=""/>
+                    <i class="iconfont">&#xe60d;</i>
+                </div>
+            </div>
+            <img src="../images/DefaultAvatar_m.png">
+        </div>
+    </div>
+                  <!---------购物车来啦-------->
+    <div class="CartHeader">您的购物篮</div>
+    <div id="cart">
+        <div id="cartProduct">
+
+        </div>
+        <div id="pay">
+            <div class="Xz">
+                <span>小计:</span>
+                <div id="total">100元</div>
+            </div>
+            <div class="Xz">
+                <span>折扣：</span>
+                <div id="discount">100元</div>
+            </div>
+            <div class="DZ">
+                <span>新总额:</span>
+                <div id="newCount">200元</div>
+            </div>
+            <button id="payBill">进行结账</button>
+            <button id="continueBuy">继续购物</button>
+            <div id="discountCode">
+                请输入十位数的折扣代码
+                <div id="disCountarrow"> > </div>
+            </div>
+        </div>
+    </div>
+            <!-----------这是最新底部------->
+    <div id="gitSha">Version: db5bb9b3</div>
+    <div class="cartBottomWrap">
+        <div class="CartBottom">
+            <div>
+                <h5>服务</h5>
+                <a href="">PlayStationStore</a>
+            </div>
+            <div>
+                <h5>账号</h5>
+                <a href="">账号管理</a>
+                <a href="">客户支持</a>
+            </div>
+            <div class="special">
+                <h5>法律</h5>
+                <a href="">服务条款及使用协议</a>
+                <a href="">开源软件使用许可</a>
+                <a href="">隐私政策</a>
+                <a href="">著作权及商标的告示</a>
+                <a href="">关于我们</a>
+            </div>
+            <div class="Network">
+                <h5>PlayStation  Network</h5>
+                <a href="">Support</a>
+                <div class="social" >
+                    <a class="ip1" href=""><i class="iconfont">&#xe92a;</i></a>
+                    <a class="ip2" href=""><i class="iconfont">&#xe632;</i></a>
+                    <a class="ip3" href=""><i class="iconfont">&#xe68e;</i></a>
+                    <a class="ip4" href=""><i class="iconfont">&#xe764;</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

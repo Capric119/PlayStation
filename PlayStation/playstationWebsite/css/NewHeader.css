@@ -1,0 +1,150 @@
+/*            全局样式               */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,dt,form,fieldset,legend,input,textarea,select{margin:0;padding:0;box-sizing: border-box;}
+a{text-decoration:none}
+em,i{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+.ind{text-indent:2em}
+.ind10{text-indent:10px;}
+.noborder{border:0;}
+.left{float:left;}
+.right{float:right;}
+.clearBoth{clear:both;}
+.font12{font-size:12px;}
+html,body{width:100%;height:100%;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+a{color:#000;}
+*{box-sizing: border-box;}
+body{
+    background: #002055;
+}
+/***顶部栏啊啊啊啊啊啊***/
+.top{
+    width: 100%;
+    height:36px;
+    text-align: right;
+    padding: 0 23px;
+    background: #000000;
+}
+.top a{
+    width: 70px;
+    height: 36px;
+    color: white;
+    line-height: 36px;
+}
+.top a img{
+    width: 70px;
+    height: 13px;
+}
+#container{
+    width: 100%;
+    height: 90px;
+    margin:0 auto;
+    z-index: 1000;
+    background: rgba(0,0,0,0.7);
+}
+#logo{
+    width: 200px;
+    height: 90px;
+    float: left;
+}
+#logo a{
+    color: white;
+    font-size: 20px;
+    line-height: 90px;
+}
+#nav_R{
+    width: 300px;
+    height: 60px;
+    float: right;
+}
+#nav_R #like{
+    width: 235px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+#god .shu{
+    width: 7px;
+    height: 21px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.9);
+    float: left;
+    line-height: 25px;
+}
+#god a{
+    display: inline-block;
+    padding: 0 5px;
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+    color: lightgrey;
+    line-height: 25px;
+    float: left;
+    text-align: center;
+}
+#god #dropdown{
+    width: 120px;
+    height:30px;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+    color:lightgrey;
+    position: relative;
+}
+#dropdown .hide{
+    width: 180px;
+    height: 210px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    text-indent: 12px;
+    display: none;
+}
+#dropdown ul{
+    width: 180px;
+    background: #000;
+}
+#dropdown .ul1{
+    height: 120px;
+    border-bottom: 1px solid white;
+}
+#dropdown .ul2{
+    border-bottom: 1px solid white;
+}
+#dropdown ul li{
+    width:180px;
+    height: 30px;
+}
+#dropdown ul li:hover{
+    background: grey;
+}
+#sear{
+    width: 235px;
+    height: 26px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.7);
+    float: left;
+}
+#sear i{
+    line-height: 26px;
+}
+
+#sear input{
+    width: 200px;
+    height: 20px;
+    margin-left: 15px;
+    margin-top: 3px;
+    float: left;
+    color: #000;
+    border: none;
+    background-color: transparent;
+}
+
+#nav_R img{
+    width: 50px;
+    height: 50px;
+    margin: 5px auto;
+}

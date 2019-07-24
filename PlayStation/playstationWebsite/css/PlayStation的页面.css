@@ -1,0 +1,72 @@
+			/*PlayStation4的页面*/
+			/*            全局样式               */
+		body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,dt,form,fieldset,legend,input,textarea,select{margin:0;padding:0;box-sizing: border-box;} 
+		body{font:12px "微软雅黑";}
+		a{text-decoration:none} 
+		em,i{font-style:normal}
+		li{list-style:none}
+		img{border:0;vertical-align:middle} 
+		table{border-collapse:collapse;border-spacing:0}
+		p{word-wrap:break-word}
+		.ind{text-indent:2em} 
+		.ind10{text-indent:10px;}       
+		.noborder{border:0;}
+		.left{float:left;}
+		.right{float:right;}
+		.clearBoth{clear:both;}
+		.font12{font-size:12px;}
+		html,body{width:100%;height:100%;}
+		h1,h2,h3,h4,h5,h6{font-weight:normal;}
+		a{color:#000;}
+		*{box-sizing: border-box;}
+		html,body{
+			width: 100%;
+			height: 100%;
+		}
+		body{
+			overflow-x: hidden;
+		}
+	
+		#context1{
+			width: 100%;
+			height: 600px;
+			padding: 54px 15px;
+		}
+		#context1 h2{
+			height: 84px;
+			font-size: 36px;
+			color: #000000;
+			line-height: 84px;
+			text-align: center;
+		}
+		#context1 #passage1{
+			width: 1280px;
+			height: 500px;
+			overflow:hidden;
+		}
+		#passage1-p1{
+			width: 370px;
+			float: left;
+			margin: 15px 0;
+			padding: 0 15px;
+		}
+		#passage1-p1 p{
+			font-size: 14px;
+			margin-top: 14px;
+		}
+		#passage1-p1 #more1{
+			width: 200px;
+			height: 48px;
+			background: blue;
+			font-size:14px;
+			text-align: center;
+			line-height: 48px;
+			color:white;
+			margin: 12px;
+		} 
+		#context1 #context1-img{
+			width: 530px;
+			height: 440px;
+			margin-left: 100px;
+			float:left;
+		}

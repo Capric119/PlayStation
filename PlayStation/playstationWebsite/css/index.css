@@ -1,0 +1,609 @@
+			 /*            全局样式               */
+		body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,dt,form,fieldset,legend,input,textarea,select{margin:0;padding:0;box-sizing: border-box;} 
+		body{font:12px "微软雅黑";}
+		a{text-decoration:none} 
+		em,i{font-style:normal}
+		li{list-style:none}
+		img{border:0;vertical-align:middle} 
+		table{border-collapse:collapse;border-spacing:0}
+		p{word-wrap:break-word}
+		.ind{text-indent:2em} 
+		.ind10{text-indent:10px;}       
+		.noborder{border:0;}
+		.left{float:left;}
+		.right{float:right;}
+		.clearBoth{clear:both;}
+		.font12{font-size:12px;}
+		html,body{width:100%;height:100%;}
+		h1,h2,h3,h4,h5,h6{font-weight:normal;}
+		a{color:#000;}
+		*{box-sizing: border-box;}
+		html,body{
+			width: 100%;
+			height: 100%;
+		}
+		body{
+			overflow-x: hidden;
+		}
+		/*********HEADER***************/
+		.header{
+			width:100%;
+			height: 102px;
+			background: black;
+		}
+		.header .top{
+			height:36px;
+			text-align: right;
+			padding: 0 23px;
+		}
+		.header .top a{
+			width: 70px;
+			height: 36px;
+			line-height: 36px;
+		}
+		.header .top a img{
+			width: 70px;
+			height: 13px;
+		}
+		.nav{
+			height:66px;
+		}
+		.nav #PS{
+			width: 76px;
+			heihgt:66px;
+			line-height: 66px;
+			color: white;
+			float: left;
+			margin-left:20px;
+		}
+		.nav li{
+			width: 76px;
+			height: 66px;
+			float: left;
+			text-align: center;
+		}
+		.nav li a{
+			width: 76px;
+			heihgt:66px;
+			line-height: 66px;
+			color: white;
+		}
+		.nav #PS{
+			width: 91px;
+			height: 64px;
+			padding-left: 13px;
+		}
+		.nav #PS a{
+			width: 91px;
+			height: 64px;
+			line-height: 64px;
+			text-align: center;
+		}
+		.nav #PS img{
+			width: 44px;
+			height: 34px;
+		}
+		.nav li div{
+			width:100%;
+			height: 200px;
+			background: blue;
+			float: left;
+			display: none;
+			position: absolute;left: 0;top: 102px;
+			background:radial-gradient(circle at 50% 0,lightblue,blue);
+		}
+		/*li内的每个div样式不同*/
+		
+		.nav li:hover{
+			background:blue;
+		}
+		.nav li:hover div{
+			display: block;
+			z-index: 2000;
+		}
+		.nav li div a{
+			display: block;
+			width: 250px;
+			height: 200px;
+			float: left;
+			margin: 50px 50px;
+		}
+		.nav li div a img{
+			width: 150px;
+			height: 100px;
+		}
+		.nav li div a span{
+			display: block;
+			width: 100px;
+			heihgt:14px;
+			line-height: 14px;
+			color: white;
+			margin: 0 auto;
+		}
+		.nav #search{
+			width: 270px;
+			height: 64px;
+			float: right;
+			position: relative;
+		}
+		#search a{
+			font-size: 14px;
+			line-height: 66px;
+			color: white;
+			font-weight: bold;
+		}
+		#search1{
+			width: 207px;
+			height: 64px;
+		}
+		#search #signIn{
+			width: 60px;
+			height: 36px;
+			margin-left: 10px;
+			background: dimgrey;
+			color: white;
+			border: none;
+		}
+		
+		
+		#search #search2{
+			width: 34px;
+			height: 34px;
+			background:dimgray url("https://asia.playstation.com.cn/content/dam/pscom/regional-assets/header/menu_navi-search.svg") no-repeat;
+			background-size: 24px 24px;
+			background-position:center;
+			position: absolute;right: 40px;top: 16px;
+			border: none;
+		}
+		
+		
+		/* 主体部分主体部分主体部分 */
+		/* 1.轮播图的CSS */
+		.globel{
+			width: 100%;
+		}
+		.globel #slider{
+			width: 100%;
+			height: 500px;
+			overflow: hidden;
+			position: relative;
+		}
+		.globel #slider div img{
+			width:100%;
+			height: 450px;
+			position: absolute;
+		}
+		.globel #slider #arrow-left{
+			width: 44px;
+			height: 44px;
+			position: absolute;left: 20px;top: 174px;
+			background: lightgrey;
+			opacity: 0.7;
+			}
+		.globel #slider #arrow-right{
+			width: 44px;
+			height: 44px;
+			position: absolute;right: 20px;top: 174px;
+			background: lightgrey;
+			opacity: 0.7;
+		}
+		/* 轮播图下的内容区 */
+		.globel #context1{
+			width: 100%;
+			height: 520px;
+			padding: 54px 15px;
+		}
+		#context1 h2{
+			height: 84px;
+			font-size: 36px;
+			color: #000000;
+			line-height: 84px;
+			text-align: center;
+		}
+		#context1 #passage{
+			width: 1280px;
+			height: 328px;
+			overflow:hidden;
+		}
+		#passage-p{
+			width: 370px;
+			float: left;
+			margin: 15px 100px;
+			padding: 0 15px;
+		}
+		#passage-p p{
+			font-size: 14px;
+			margin-top: 14px;
+		}
+		#passage-p #more1{
+			width: 200px;
+			height: 48px;
+			background: blue;
+			font-size:14px;
+			text-align: center;
+			line-height: 48px;
+			color:white;
+			margin: 12px;
+		} 
+		#context1 #context1-img{
+			width: 530px;
+			height: 290px;
+			margin-left: 100px;
+		}
+		/***************************内容第二部分***************/
+		.globel #context2{
+			width: 100%;
+			height: 520px;
+			padding: 54px 15px;
+		}
+		#context2 h2{
+			height: 84px;
+			font-size: 36px;
+			color: #000000;
+			line-height: 84px;
+			text-align: center;
+		}
+		#context2 #passage2{
+			width: 1280px;
+			height: 328px;
+			overflow:hidden;
+		}
+		#passage2-p2{
+			width: 370px;
+			float: left;
+			margin: 15px 0;
+			padding: 0 15px;
+		}
+		#passage2-p2 p{
+			font-size: 14px;
+			margin-top: 14px;
+		}
+		#passage2-p2 #more2{
+			width: 200px;
+			height: 48px;
+			background: blue;
+			font-size:14px;
+			text-align: center;
+			line-height: 48px;
+			color:white;
+			margin: 12px;
+		} 
+		#context2 #context2-img{
+			width: 530px;
+			height: 330px;
+			margin-left: 100px;
+			float:left;
+		}
+		/********内容第三部分***********/
+		#context3{
+			width:100%;
+			height:610px;
+		}
+		#context3 h2{
+			height: 84px;
+			font-size: 36px;
+			color: #000000;
+			line-height: 84px;
+			text-align: center;
+		}
+		#context3 img{
+			width:450px;
+			height:250px;
+		}
+		
+		#context3 #passage3{
+			height:420px;
+		} 
+		#passage3 #passage3-l{
+			width:480px;
+			height:320px;
+			float:left;
+			margin: 50px;
+		}
+		#passage3 #passage3-l a{
+			display: block;
+			width: 450px;
+			height: 68px;
+		}
+		#passage3-l #more3-l{
+			width: 200px;
+			height: 48px;
+			font-size: 14px;
+			background: #0000FF;
+			color: white;
+			text-align: center;
+			line-height: 48px;
+			margin: 10px auto;
+		}
+		#passage3 #passage3-r{
+			width:480px;
+			height:320px;
+			float:right;
+			margin: 50px;
+		}
+		#passage3 #passage3-r a{
+			display: block;
+			width: 450px;
+			height: 68px;
+		}
+		#passage3-r #more3-r{
+			width: 200px;
+			height: 48px;
+			font-size: 14px;
+			background: #0000FF;
+			color: white;
+			text-align: center;
+			line-height: 48px;
+			margin: 10px auto;
+		}
+		/*********************内容带图片的第四部分***************/
+		.globel #context4{
+			width: 100%;
+			height:800px;
+			background: url(../images/ps4a.jpg) no-repeat ;
+			background-size: cover;
+		}
+		#passage4-p4{
+			width: 420px;
+			height: 259px;
+			float: right;
+			margin: 400px 100px 0 0;
+			padding: 0 15px;
+			background: rgba(0,0,0,0.7);
+		}
+		#passage4-p4 h5{
+			font-size: 16px;
+			color: white;
+			margin-top: 40px;
+			font-weight:bold ;
+		}
+		#passage4-p4 p{
+			font-size: 14px;
+			margin-top: 14px;
+			color: white;
+		}
+		#passage4-p4 #more4{
+			width: 200px;
+			height: 48px;
+			font-size:14px;
+			background: blue;
+			text-align: center;
+			line-height: 48px;
+			color:white;
+			margin: 12px;
+		} 
+		/*********** 内容部分五啊 *************/
+		.globel #context5{
+			width: 100%;
+			height: 520px;
+			padding: 54px 15px;
+		}
+		#context5 h2{
+			height: 84px;
+			font-size: 36px;
+			color: #000000;
+			line-height: 84px;
+			text-align: center;
+		}
+		#context5 #passage5{
+			width: 1280px;
+			height: 328px;
+			overflow:hidden;
+		}
+		#passage5-p5{
+			width: 370px;
+			float: left;
+			margin: 15px 100px;
+			padding: 0 15px;
+		}
+		#passage5-p5 p{
+			font-size: 14px;
+			margin-top: 14px;
+		}
+		#passage5-p5 #more5{
+			width: 200px;
+			height: 48px;
+			background: blue;
+			font-size:14px;
+			text-align: center;
+			line-height: 48px;
+			color:white;
+			margin: 12px;
+		} 
+		#context5 #context5-img{
+			width: 420px;
+			height: 236px;
+			margin-left: 100px;
+			float:left;
+		}
+		/************带图片的第六部分*******************/
+		.globel #context6{
+			width: 100%;
+			height: 520px;
+			padding: 54px 15px;
+		}
+		#context6 h2{
+			height: 84px;
+			font-size: 36px;
+			color: #000000;
+			line-height: 84px;
+			text-align: center;
+		}
+		#context6 #passage6{
+			width: 1280px;
+			height: 328px;
+			overflow:hidden;
+		}
+		#passage6-p6{
+			width: 370px;
+			float: left;
+			margin: 15px 100px;
+			padding: 0 15px;
+		}
+		#passage6-p6 p{
+			font-size: 14px;
+			margin-top: 14px;
+		}
+		#passage6-p6 #more6{
+			width: 200px;
+			height: 48px;
+			background: blue;
+			font-size:14px;
+			text-align: center;
+			line-height: 48px;
+			color:white;
+			margin: 12px;
+		} 
+		#context6 #context6-img{
+			width: 530px;
+			height: 290px;
+			margin-left: 100px;
+		}
+/***********第六部分新闻发布部分******************/
+
+		#massage{
+			width:100% ;
+			height: 520px;
+			
+		}
+		#news{
+			width: 100%;
+			height: 260px;
+			margin:54px 15px;
+			padding: 0 100px;
+		}
+		#announce{
+			width: 100%;
+			height: 260px;
+			margin:100px 15px;
+			padding: 0 100px;
+		}
+		#massage h3{
+			height:38px;
+			font-size: 18px;
+			line-height: 38px;
+			font-weight: bold;
+			border-bottom: 2px solid black;
+		}
+		#massage h3 a{
+			display: inline-block;
+			width: 100px;
+			height: 27px;
+			color: blue;
+			float: right;
+		}
+		#massage p{
+			height: 54px;
+			font-size: 14px;
+			line-height: 54px;
+			border-bottom:1px dashed black ;
+		}
+		#massage p span{
+			width:84px;
+			height: 54px;
+			font-size: 14px;
+			line-height: 54px;
+			color: grey;
+			margin-right: 20px;
+		}
+		
+		/*************底部栏啊*********************/
+		#bottom{
+			width: 100%;
+			height: 150px;
+			background: darkblue;
+			padding: 14px 70px;
+		}
+		#bottom div{
+			width: 220px;
+			height: 84px;
+			margin: 15px 30px;
+			float: left;
+		}
+		#bottom div h3{
+			width: 210px;
+			height: 24px;
+			font-size: 18px;
+			color: white;
+			line-height: 24px;
+			font-weight: bold;
+		}
+		#bottom span a{
+			width: 210px;
+			height: 20px;
+			font-size: 12px;
+			color: white;
+			line-height: 20px;
+		}
+		
+		/*最底部网址网警投诉啥的啊啊啊啊啊啊 */
+		#under{
+			width: 100%;
+			height: 250px;
+			background:radial-gradient(circle at 50% 0,lightblue,blue);
+			position: relative;
+		}
+		#under ul{
+			width: 100%;
+			height: 28px;
+			padding: 20px 200px;
+			margin-left: 100px;
+		}
+	
+		#under ul li{
+			padding: 0px 20px;
+			float: left;
+			color: white;
+			border-right: 1px solid white;
+		}
+		#under ul #borderNo{
+			border: none;
+		}
+		#under div{
+			width: 100%;
+			height: 26px;
+			color: #0000FF;
+			text-align: center;
+			line-height: 26px;
+			margin-top: 20px;
+		}
+		#under div a{
+			color: white;
+		}
+		#under #symbol{
+			width: 100px;
+			height: 38px;
+			position: absolute;
+			bottom: 40px;
+			right: 15%;
+		}
+		#under #turnUp{
+			width: 40px;
+			height: 40px;
+			background:rgba(192,192,192,0.8);
+			position: fixed;bottom: 30px;right: 5%;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#giant{
+				width: 1000px;
+				height: 10000px;
+				background: green;
+			}
+			
+			#turnUp{
+				width: 40px;
+				height: 40px;
+				background:rgba(192,192,192,0.8);
+				position: fixed;bottom: 30px;right: 5%;
+			}
+		</style>
+		<script type="text/javascript">
+			function turnUp(){
+				var _turn=document.getElementById("turnUp");
+				var _giant=document.getElementById("giant");
+				_turn.onclick=function(){
+					document.documentElement.scrollTop=0;
+				}
+			}
+			window.onload=turnUp;
+		</script>
+	</head>
+	<body>
+		<div id="giant">
+			
+		</div>
+		<div id="turnUp">
+			<img src="https://asia.playstation.com.cn/content/dam/pscom/ja-jp/icon/btn_pagetop.png" >
+		</div>
+	</body>
+</html>

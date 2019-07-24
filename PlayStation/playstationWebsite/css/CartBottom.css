@@ -1,0 +1,92 @@
+#gitSha{
+    width: 100%;
+    height: 28px;
+    background: rgba(0,0,0,0.9);
+    margin-top: 40px;
+    color: lightgrey;
+    text-align: center;
+    float: left;
+}
+.cartBottomWrap{
+    width: 100%;
+    height: 300px;
+    background: rgba(0,0,0,0.9);
+    float: left;
+}
+.CartBottom{
+    width: 90%;
+    height:300px;
+    margin:0 auto;
+}
+.CartBottom div{
+    width: 15%;
+    height: 240px;
+    font-size: 16px;
+    color: #FFFFFF;
+    float: left;
+    margin-right: 18px;
+    padding: 30px;
+}
+.CartBottom div h5{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.CartBottom div a{
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 100%;
+}
+.CartBottom .special{
+    width: 30%;
+    height: 240px;
+}
+.special h5{
+    font-size: 14px;
+}
+.special a{
+    display: block;
+    width: 280px;
+}
+.CartBottom .Network{
+    width: 28%;
+    height: 286px;
+    background: #3c3c3c;
+}
+.Network .social{
+    width: 230px;
+    height: 50px;
+    float: left;
+    margin: 10px auto;
+    padding: 0;
+}
+.Network .social a{
+    display: block;
+    width: 36px;
+    height: 36px;
+    float: left;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 36px;
+    margin:0 5px;
+}
+.social a:hover{
+    background:darkgrey;
+}
+.social a i{
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+.social .ip1{
+    background: #00CCFF;
+}
+.social .ip2{
+    background: blue;
+}
+.social .ip3{
+    background: #DB4A39;
+}
+.social .ip4{
+    background: #EF3C39;
+}

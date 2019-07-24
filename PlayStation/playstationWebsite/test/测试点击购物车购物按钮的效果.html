@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			html,body{
+				margin: 0;padding: 0;
+			}
+			body{
+				width: 100%;
+				height: 100%;
+			}
+			#before{
+				width: 100%;
+				height: 300px;
+				background:orange;
+			}
+			#buyT{
+				width: 100%;
+				height: 300px;
+				background:greenyellow; 
+			}
+			#buy1{
+				width:160px;
+				height: 130px;
+				background: lightgoldenrodyellow;
+			}
+			#Bigger{
+				width: 100%;
+				height: 100%;
+				position: absolute;left: 0;top: 0;
+				background: rgba(0,0,0,0.6);
+				display: none;
+			}
+			#Big{
+				width: 500px;
+				height: 300px;
+				background: white;
+				position: absolute;left: 300px;top: 200px;
+			}
+			#bigoneX{
+				width: 100px;
+				height: 100px;
+				background: green;
+				float: right;
+			}
+		</style>
+		<script type="text/javascript">
+			function event(){
+				document.getElementById("butt1").onclick=function(){
+					let _bigger=document.getElementById("Bigger");
+					_bigger.style.display="block";
+				}
+				document.getElementById("bigoneX").onclick=function(){
+					document.getElementById("Bigger").style.display="none";
+				}
+			}
+			function main(){
+				event();
+			}
+			window.onload=main;
+		</script>
+	</head>
+	<body>
+		<div id="before">
+			
+		</div>
+		<div id="buyT">
+			<div id="buy1">
+				<button id="butt1" type="button">点击吧，少年</button>
+				
+			</div>
+		</div>
+		<div id="Bigger">
+			<div id="Big">
+				<div id="bigone">
+					1
+					<div id="bigoneX">X</div>
+				</div>
+				<div id="bigtwo">
+					2
+				</div>
+				<div id="bigthree">
+					3
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/enter(登录).css"/>
+		<script type="text/javascript">
+			class Sign{
+				constructor(){
+					this.auto();
+					this.events();
+				}
+				connect(_account,_password){
+					let _xhr=new XMLHttpRequest();
+					_xhr.onreadystatechange=function(){
+						if(_xhr.status===200 && _xhr.readyState===4){
+							let _data=window.eval("("+_xhr.responseText+")");
+							if(_data.code===2000){
+								window.location.href="../index.html";
+							}
+						}
+					}
+					_xhr.open("post","../API/signIn.php",true);
+					_xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded;charset=utf-8;");
+					_xhr.send("account="+_account+"&password="+_password);
+				}
+
+				save(_account,_password){
+					document.cookie="account"+_account+";path=/;expries="+new Date(new Date().getTime+7*24*60*60*1000);
+					document.cookie="password"+_password+";path=/;expries="+new Date(new Date().getTime+7*24*60*60*1000);
+				}
+
+				events(){
+					let _in1=document.getElementById("in1");
+					let _in2=document.getElementById("in2");
+					let _signIn=document.getElementById("signIn");
+					let _warn=document.getElementById("warn");
+					let _mail=/\w+@\w+\.\w+/;
+					let _me=this;
+					_in1.onchange=function(e){
+						e=e||window.event;
+						if(_in1.value!="" && _in2.value!=""){
+							document.getElementById("signIn").style.background="blue";
+						}else{
+							document.getElementById("signIn").style.background="skyblue";
+						}
+						_in2.onchange=function(event){
+							event=event||window.event;
+							if(_in1.value!="" && _in2.value!=""){
+								document.getElementById("signIn").style.background="blue";
+							}else{
+								document.getElementById("signIn").style.background="skyblue";
+							}
+						}
+					}
+					_signIn.onclick=function(){
+						let _account=document.getElementById("in1").value;
+						let _password=document.getElementById("in2").value;
+						console.log("点击事件触发了");
+						_me.save(_account,_password);
+						_me.connect(_account,_password);
+						// console.log(_me.connect(_account,_password));
+
+						if(_in1.value===""){
+							_warn.innerText="邮箱不能为空";
+						}else if(!_mail.test(_in1.value)) {
+							_warn.innerText = "邮箱格式错误"
+						}
+					}
+				}
+
+				auto(){
+					let _cookie=document.cookie;
+					let _map=_cookie.split(";");
+					let _item=null,_account,_password;
+					for(let i=0;i<_map.length;i++){
+						_item=_map[i].split("=");
+						if(_item[0].indexOf("account")>=0){
+							_account=_item[1];
+						}
+						if(_item[0].indexOf("password")>=0){
+							_password=_item[i];
+						}
+					}
+					this.connect(_account,_password);
+				}
+			}
+
+
+			function main(){
+				new Sign();
+			}
+			window.onload=main;
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="head">
+				SONY
+				<button id="butt" type="button">
+					×
+				</button>
+			</div>
+			<div id="logo1">
+				<img src="../images/logo_playstation.png" >
+			</div>
+			
+			<div id="ap">
+				使用多项SONY Group服务，一个登录ID全部搞定。
+			</div>
+			<div id="more">
+				<a href="">了解更多</a>
+			</div>
+			<div id="warn"></div>
+			<form id="form" action="" method="post">
+				<input id="in1" type="text" placeholder="登录ID(Email地址)"/>
+				<input id="in2" type="password" placeholder="密码" />
+				<button id="passwordOn" type="button"></button>
+				<div id="Cbutt">
+					<button id="signIn" type="button">登陆</button>
+				</div>
+			</form>
+			<div id="Cannot">
+				<a href="">无法登录？</a>
+			</div>
+			<div id="Create">
+				<button type="button">
+					创建新账号
+				</button>
+			</div>
+			<div id="space"></div>
+		</div>
+		<div id="bottom">
+			<button type="button">服务条款/隐私政策/帮助说明</button>
+		</div>
+	</body>
+</html>

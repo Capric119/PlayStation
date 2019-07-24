@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#form{
+				width: 384px;
+				height: 200px;
+				margin:12px auto;
+			}
+			#form input{
+				width: 384px;
+				height: 58px;
+			}
+			#form #Cbutt{
+				width: 384px;
+				height: 58px;
+				margin-top: 14px;
+				
+			}
+			#form #Cbutt #signIn{
+				width: 364px;
+				height: 58px;
+				background: skyblue;
+				font-size: 14px;
+				color: white;
+				border: 1px solid lightgrey;
+				margin-left:10px;
+			}
+		</style>
+		<script type="text/javascript">
+			function judge(){
+				var _in1=document.getElementById("in1");
+				var _in2=document.getElementById("in2");
+				_in1.onchange=function(e){
+					e=e||window.event;
+					var _me=this;
+					if(this.value!="" && _in2.value!=""){
+						document.getElementById("signIn").style.background="blue";
+					}else{
+						document.getElementById("signIn").style.background="skyblue"
+					}
+					_in2.onchange=function(e){
+						e=e||window.event;
+						if(_me.value!="" && this.value!=""){
+							document.getElementById("signIn").style.background="blue";
+						}else{
+							document.getElementById("signIn").style.background="skyblue"
+						}
+					}	
+				}
+				
+				//不加事件判断一下登录框变蓝色;
+			// 	if(_in1.value!=""){
+			// 		document.getElementById("signIn").style.background="blue";
+			// 	}else{
+			// 		document.getElementById("signIn").style.background="skyblue";
+			// 	};//这是不可以的;
+			 }
+			function main(){
+				judge();
+			}
+			window.onload=main;
+		</script>
+	</head>
+	<body>
+		<form id="form" action="" method="post">
+			<input id="in1" type="text" placeholder="登录ID(Email地址)" value="" />
+			<input id="in2" type="password" placeholder="密码" value="" />
+			<div id="Cbutt">
+				<button id="signIn" type="button">登陆</button>
+			</div>
+		</form>
+	</body>
+</html>

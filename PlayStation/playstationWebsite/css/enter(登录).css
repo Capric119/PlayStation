@@ -1,0 +1,163 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,dt,form,fieldset,legend,input,textarea,select{margin:0;padding:0;box-sizing: border-box;} 
+			a{text-decoration:none} 
+			em,i{font-style:normal}
+			li{list-style:none}
+			img{border:0;vertical-align:middle} 
+			table{border-collapse:collapse;border-spacing:0}
+			p{word-wrap:break-word}
+			.ind{text-indent:2em} 
+			.ind10{text-indent:10px;}       
+			.noborder{border:0;}
+			.left{float:left;}
+			.right{float:right;}
+			.clearBoth{clear:both;}
+			.font12{font-size:12px;}
+			html,body{width:100%;}
+			h1,h2,h3,h4,h5,h6{font-weight:normal;}
+			a{color:#000;}
+			*{box-sizing: border-box;}
+			
+			html,body{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+			}
+			body{
+				width: 100%;
+				background: url(../images/wallpaper.jpg) no-repeat;
+				background-size:cover ;
+			}
+			#container{
+				width:480px;
+				margin: 0 auto;
+				background: white;
+			}
+			#head{
+				height: 70px;
+				background: black;
+				text-align: center;
+				line-height: 70px;
+				color:white;
+				font-family: BlinkMacSystemFont;
+				font-size: 30px;
+				margin: 10px auto 0;
+			}
+			#head #butt{
+				width: 70px;
+				height:50px;
+				background:black;
+				text-align:center;
+				font-size:40px;
+				line-height: 50px;
+				color:silver;
+				border:none;
+				float: right;
+				margin: 10px 0;
+			}
+			#logo1{
+				height:125px;
+			}
+			#logo1 img{
+				width: 432px;
+				margin: 0 24px;
+			}
+			
+			#ap{
+				margin:36px auto;
+				text-align:center;
+			}
+			#more{
+				width: 380px;
+				height: 58px;
+				margin: 0 auto;
+				line-height: 58px;
+			}
+			#more a{
+				font-size:14px;
+				color: #0000FF;
+			}
+			#warn{
+				width: 384px;
+				height: 34px;
+				margin:0 auto;
+				font-size: 16px;
+				color: red;
+				line-height: 34px;
+			}
+			#form{
+				width: 384px;
+				height: 200px;
+				margin:12px auto;
+				position: relative;
+			}
+			#form input{
+				width: 384px;
+				height: 58px;
+			}
+			#form #passwordOn{
+				width: 48px;
+				height: 48px;
+				position: absolute;right:3px;top:62px;
+				background: url(../images/button_icon_password_on.png) no-repeat;
+				background-position:center center;
+				background-size:cover ;
+				border: none;
+			}
+			#form #Cbutt{
+				width: 384px;
+				height: 58px;
+				margin-top: 14px;
+				
+			}
+			#form #Cbutt #signIn{
+				width: 364px;
+				height: 58px;
+				background: skyblue;
+				font-size: 14px;
+				color: white;
+				border: 1px solid lightgrey;
+				margin-left:10px;
+			}
+			#Cannot{
+				width: 380px;
+				height: 58px;
+				margin: 0 auto;
+				line-height: 58px;
+			}
+			#Cannot a{
+				font-size:14px;
+				color: #0000FF;
+			}
+			#Create{
+				width: 384px;
+				height: 58px;
+				margin-top: 14px;
+				margin: 0 auto;
+			}
+			#Create button{
+				width: 364px;
+				height: 58px;
+				font-size: 14px;
+				background: white;
+				color: black;
+				margin-left:10px;
+				border: 1px solid lightgrey;
+			}
+			#space{
+				height: 120px;
+			}
+			#bottom{
+				width:480px;
+				height: 46px;
+				margin: 0 auto;
+			}
+			#bottom button{
+				height: 20px;
+				background: none;
+				border:none ;
+				color: #949494;
+				margin: 15px 0 0 150px;
+			}
+			
+			
+			

@@ -1,0 +1,248 @@
+	 /*            全局样式               */
+		body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,dt,form,fieldset,legend,input,textarea,select{margin:0;padding:0;box-sizing: border-box;}
+		a{text-decoration:none} 
+		em,i{font-style:normal}
+		body{font-size: 12px;}
+		li{list-style:none}
+		img{border:0;vertical-align:middle} 
+		table{border-collapse:collapse;border-spacing:0}
+		p{word-wrap:break-word}
+		.ind{text-indent:2em} 
+		.ind10{text-indent:10px;}       
+		.noborder{border:0;}
+		.left{float:left;}
+		.right{float:right;}
+		.clearBoth{clear:both;}
+		.font12{font-size:12px;}
+		html,body{width:100%;height:100%;}
+		h1,h2,h3,h4,h5,h6{font-weight:normal;}
+		a{color:#000;}
+		*{box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			width: 100%;
+			background: #002055;
+		}
+
+#submenu{
+	height: 43px;
+	background: rgba(0,0,0,0.9);
+}
+#submenu div{
+	float: left;
+	margin: 5px 10px;
+}
+#submenu span{
+	font-size:16px;
+	color: lightgray;
+	line-height: 43px;
+}
+/*********************主体部分啊啊啊啊啊啊啊啊啊啊啊********************/
+#main{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+#main h1{
+	width:1000px;
+	height:100px;
+	background: rgba(0,0,0,0.3);
+	color: rgba(255,255,255,0.9);
+	font-size: 48px;
+	padding: 27px 18px;
+}
+#main #left_menu{
+	width: 170px;
+	height: 1120px;
+	background: rgba(0,0,0,0.5);
+	float: left;
+	color: rgba(255,255,255,0.6);
+	overflow: hidden;
+}
+#left_menu h2{
+	width: 124px;
+	height: 25px;
+	border-bottom: 1px solid lightgrey;
+	margin: 20px;
+	color: rgba(255,255,255,0.4);
+	font-size: 16px;
+}
+#left_menu ul{
+	width: 124px;
+	height: 120px;
+	margin: 20px;
+}
+#left_menu a{
+	display: block;
+	width: 136px;
+	margin: 3px;
+	color: rgba(255,255,255,0.6);
+	font-size: 14px;
+	text-align: left;
+}
+
+#right_main{
+	width: 795px;
+	height: 1120px;
+	float: right;
+}
+/****************主体右半部分轮播图**************/
+#right_main #shopSlider{
+	width: 794px;
+	height: 286px;
+}
+#right_main #shopSlider img{
+	width: 794px;
+	height: 250px;
+}
+#shopSlider #buttWrap{
+	width: 794px;
+	height: 36px;
+	background: rgba(0,0,0,0.5);
+}
+#shopSlider span{
+	display: block;
+	width: 30px;
+	height: 30px;
+	color: rgba(255,255,255,1);
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 3px ;
+	line-height: 25px;
+	float:left;
+}
+#shopSlider #span1{
+	margin-left: 300px;
+}
+ #beef li{
+	width: 24px;
+	height: 4px;
+	float: left;
+    background: grey;
+	margin-top: 16px ;
+	margin-right: 3px;
+	font-size: 0;
+
+}
+/*******轮播图下边的购物表*********/
+#wrapR{
+	width: 790px;
+	height: 775px;
+	background: rgba(0,0,0,0.6);
+	margin-top: 20px;
+	float: left;
+}
+#innerL{
+	width: 620px;
+	height: 775px;
+	float: left;
+}
+#innerL #innerL1{
+	width: 620px;
+	height: 94px;
+}
+
+#innerL1 img{
+	margin: 0 4px;
+}
+
+#innerR{
+	width: 160px;
+	height: 775px;
+	float: right;
+
+}
+#innerR img{
+	width:160px;
+	height: 600px;
+}
+	 #BuyT{
+		 width:610px;
+		 height:300px;
+		 margin-top: 30px;
+	 }
+	 #BuyT #Buyheader{
+		 width: 610px;
+		 height: 36px;
+		 padding-bottom: 10px;
+	 }
+
+	 #Buyheader .span1{
+		 height: 36px;
+		 font-size: 18px;
+		 color: white;
+		 line-height: 36px;
+		 font-weight: bold;
+
+	 }
+
+	 #Buyheader .span2{
+		 width:8px;
+		 height:20px;
+		 font-size:14px;
+		 color: white;
+		 margin: 0 10px;
+	 }
+	 #Buyheader a{
+		 width:56px;
+		 height:20px;
+		 color: #00CCFF;
+	 }
+	 .cover1{
+		 width: 134px;
+		 height: 272px;
+		 padding: 4px;
+		 float: left;
+	 }
+	 .buy1{
+		 width: 124px;
+		 height: 264px;
+		 background: rgba(0,0,0,0.6);
+		 position: relative;
+		 float: left;
+	 }
+	 .buy1 h5{
+		 width: 106px;
+		 height: 34px;
+		 color:white;
+	 }
+	 .buy1 img{
+		 width: 124px;
+		 height: 124px;
+	 }
+	 .buy1 .grid{
+		 margin-top:40px;
+	 }
+	 .grid span{
+		 display: block;
+		 width: 60px;
+		 height: 15px;
+		 color:lightgray;
+	 }
+	 .buy1 .Bfoot{
+		 width: 124px;
+		 height: 32px;
+		 background: rgba(0,0,0,0.8);
+		 position:absolute;bottom: 0;
+	 }
+	 .buy1 .Bfoot h3{
+		 width: 62px;
+		 height: 15px;
+		 float: left;
+		 margin: 8px;
+		 color:lightgray;
+	 }
+	 .Bfoot .car1{
+		 width: 24px;
+		 height:18px;
+		 padding: 0;
+		 background: url(../images/car1.png);
+		 background-size: cover;
+		 border: none;
+		 float: right;
+		 margin: 7px;
+	 }
+
+

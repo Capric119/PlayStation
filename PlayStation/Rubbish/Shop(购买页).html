@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>PlayStation&trade;Store</title>
+		<script type="text/javascript" src="../js/NewShop(新写的购买页).js"></script>
+
+		<link rel="stylesheet" type="text/css" href="../css/Shop(购买页的).css"/>
+		<link rel="stylesheet" href="../css/NewHeader.css">
+
+		<link rel="stylesheet" href="../css/CartBottom.css">
+
+		<link rel="stylesheet" href="../iconfont/font/iconfont.css">
+
+		<script type="text/javascript" src="../jQuery/jquery-3.3.1.js"></script>
+
+		<script type="text/javascript">
+					class King{
+						constructor(){
+							this.create();
+							this.events();
+						}
+						create(){
+							let _BuyT=document.getElementById("BuyT");
+							// console.log("函数被调用了");
+							for(let i=0;i<8;i++){
+								let _buy1=document.createElement("div");
+								_BuyT.children[i].appendChild(_buy1);
+								let _img=document.createElement("img"),
+										_buttJump=document.createElement("h5"),
+										_grid=document.createElement("div"),
+										_Bfoot=document.createElement("div");
+								_BuyT.children[i].children[0].appendChild(_img);
+								_img.src="../images/product"+i+".jpg";
+								_BuyT.children[i].children[0].appendChild(_buttJump);
+								_BuyT.children[i].children[0].appendChild(_grid);
+								_BuyT.children[i].children[0].appendChild(_Bfoot);
+								_buy1.className="buy1";
+								_buttJump.className="buttJump";
+								_buttJump.innerText="这是商品";
+								_grid.className="grid";
+								_Bfoot.className="Bfoot";
+								_grid.appendChild(document.createElement("span"));
+								_grid.appendChild(document.createElement("span"));
+								_Bfoot.appendChild(document.createElement("h3"));
+								_Bfoot.appendChild(document.createElement("button"));
+								_grid.children[0].innerText="制品版游戏";
+								_grid.children[1].innerText="PS4";
+								_Bfoot.children[0].innerText="这是价格";
+								_Bfoot.children[1].className="car1";
+
+							}
+						}
+						events(){
+							$(".buttJump").click(function(){
+								window.location.href="html/detail详情页.html";
+							})
+							$(".car1").click(function () {
+								window.location.href="html/结算页.html";
+							})
+						}
+					}
+					//这是下拉菜单以及一些效果
+					function hover(){
+						var _drop=document.getElementById("dropdown");
+						_drop.onmouseover=function(){
+							_drop.children[0].style.display="block";
+						}
+						_drop.onmouseout=function(){
+							_drop.children[0].style.display="none";
+						}
+					}
+			function main(){
+				new King();
+				hover();
+			}
+			window.onload=main;
+		</script>
+
+	</head>
+	<body>
+	<div class="top">
+		<a>
+			<img alt="SONYLogo" src="https://www.playstation.com.cn/mobile/images/sony_logo.svg">
+		</a>
+	</div>
+	<div id="container">
+		<div id="logo">
+			<a href="">PlayStation.Store</a>
+		</div>
+		<div id="nav_R">
+			<div id="like">
+				<div id="god">
+					<a href="">关注0</a>
+					<div class="shu">|</div>
+					<a href=""><i class="iconfont">&#xe60a;</i>0</a>
+					<div class="shu">|</div>
+					<div id="dropdown">
+						▼ capric119
+						<div class="hide">
+							<ul class="ul1">
+								<li>账号设定</li>
+								<li>支付管理</li>
+								<li>定期服务管理</li>
+								<li>兑换代码</li>
+							</ul>
+							<ul class="ul2">
+								<li>下载列表</li>
+								<li>下载队列</li>
+							</ul>
+							<ul class="ul3">
+								<li>登出</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="sear">
+					<input name="" placeholder="搜索" type="search" value=""/>
+					<i class="iconfont">&#xe60d;</i>
+				</div>
+			</div>
+			<img src="../images/DefaultAvatar_m.png">
+		</div>
+	</div>
+		<div id="submenu">
+			<div>
+				<span>
+					游戏
+				</span>
+			</div>
+			<div>
+				<span>
+					PlayStation&#174 Plus
+				</span>
+			</div>
+			<div>
+				<span>
+					下载内容
+				</span>
+			</div>
+			<div>
+				<span>
+					尊享推荐
+				</span>
+			</div>
+		</div>
+		
+		<!--------主体部分来了！！--------->
+		<div id="main">
+			<h1>游戏</h1>
+			<div id="left_menu">
+				<h2>推介内容</h2>
+				<ul>
+					<a href="">最新推出内容</a>
+					<a href="">PlayStation&#174 Plus</a>
+					<a href="">PlayStation&#174 VR</a>
+					<a href="">基本免费游戏</a>
+				<a href="">PlayStation&#174 ❤独立游戏</a>	
+				</ul>
+				
+				<h2>最受欢迎</h2>
+				<ul>
+					<a href="">最受欢迎游戏</a>
+					<a href="">最受欢迎下载</a>
+				</ul>
+				
+				<h2>游戏与追加内容</h2>
+				<ul>
+					<a href="">最新推出</a>
+					<a href="">游戏</a>
+					<a href="">游戏名称</a>
+					<a href="">下载内容</a>
+				</ul>
+				
+				<h2>试玩版游戏</h2>
+				<ul>
+					<a href="">全部试玩游戏</a>
+					<a href="">最新试玩游戏</a>
+				</ul>
+				
+				<h2>主题</h2>
+				<ul>
+					<a href="">最新主题</a>
+					<a href="">全部主题</a>
+				</ul>
+				
+				<h2>虚拟形象</h2>
+				<ul>
+					<a href="">最新虚拟形象</a>
+					<a href="">全部虚拟形象</a>
+				</ul>
+			</div>
+			<div id="right_main">
+				<!----SHOP页的轮播图啊---->
+				<div id="shopSlider">
+					<img id="picS" src="../images/game0.jpg" >
+					<div id="buttWrap">
+						<span id="span1"> < </span>
+						<div id="Sbutt">
+							<ul id="beef">
+								<li>1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+								<li>5</li>
+							</ul>
+						</div>
+						<span id="span2"> > </span>
+					</div>
+				</div>
+				<!----轮播图下的购游戏表----->
+				<div id="wrapR">
+					<div id="innerL">
+						<div id="innerL1">
+							<img src="../images/innerL1-1.jpg" >
+							<img src="../images/innerL1-2.jpg" >
+						</div>
+
+							
+						<div id="Buyheader">
+							<span class="span1">最受欢迎游戏</span>
+							<span class="span2">|</span>
+							<a href="">查看更多</a>
+						</div>
+						<div id="BuyT">
+							<div id="cover1" class="cover1"></div>
+							<div id="cover2" class="cover1"></div>
+							<div id="cover3" class="cover1"></div>
+							<div id="cover4" class="cover1"></div>
+							<div id="cover5" class="cover1"></div>
+							<div id="cover6" class="cover1"></div>
+							<div id="cover7" class="cover1"></div>
+							<div id="cover8" class="cover1"></div>
+						</div>
+					</div>
+					<div id="innerR">
+						<img src="../images/innerR.jpg" >
+					</div>
+				</div>
+			</div>
+		</div>
+
+ 	<!-------------底部栏啊啊啊啊啊---------->
+		<div id="gitSha">Version: db5bb9b3</div>
+		<div class="cartBottomWrap">
+			<div class="CartBottom">
+				<div>
+					<h5>服务</h5>
+					<a href="">PlayStationStore</a>
+				</div>
+				<div>
+					<h5>账号</h5>
+					<a href="">账号管理</a>
+					<a href="">客户支持</a>
+				</div>
+				<div class="special">
+					<h5>法律</h5>
+					<a href="">服务条款及使用协议</a>
+					<a href="">开源软件使用许可</a>
+					<a href="">隐私政策</a>
+					<a href="">著作权及商标的告示</a>
+					<a href="">关于我们</a>
+				</div>
+				<div class="Network">
+					<h5>PlayStation  Network</h5>
+					<a href="">Support</a>
+					<div class="social" >
+						<a class="ip1" href=""><i class="iconfont">&#xe92a;</i></a>
+						<a class="ip2" href=""><i class="iconfont">&#xe632;</i></a>
+						<a class="ip3" href=""><i class="iconfont">&#xe68e;</i></a>
+						<a class="ip4" href=""><i class="iconfont">&#xe764;</i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

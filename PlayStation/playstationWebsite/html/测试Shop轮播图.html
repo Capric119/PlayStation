@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Shop轮播图</title>
+		<style type="text/css">
+				body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,dt,form,fieldset,legend,input,textarea,select{margin:0;padding:0;box-sizing: border-box;} 
+			body{font:12px "微软雅黑";}
+			a{text-decoration:none} 
+			em,i{font-style:normal}
+			li{list-style:none}
+			img{border:0;vertical-align:middle} 
+			table{border-collapse:collapse;border-spacing:0}
+			p{word-wrap:break-word}
+			.ind{text-indent:2em} 
+			.ind10{text-indent:10px;}       
+			.noborder{border:0;}
+			.left{float:left;}
+			.right{float:right;}
+			.clearBoth{clear:both;}
+			.font12{font-size;12px;}
+			html,body{width:100%;height:100%;}
+			h1,h2,h3,h4,h5,h6{font-weight:normal;}
+			a{color:#000;}
+			*{box-sizing: border-box;}
+			body{
+				background: #002055;
+			}
+			#shopSlider{
+				width: 794px;
+				height: 286px;
+				margin: 0 auto;
+				overflow: hidden;
+				position: relative;
+			}
+			#shopSlider #slid{
+				width: 3970px;
+				height: 250px;
+				position: absolute;left: 0;top: 0;
+			}
+			#shopSlider img{
+				width: 794px;
+				height: 250px;
+				float: left;
+			}
+			#shopSlider #buttWrap{
+				width: 794px;
+				height: 36px;
+				background: rgba(0,0,0,0.5);
+				position: absolute;top: 250px;
+			}
+			#shopSlider span{
+				display: block;
+				width: 30px;
+				height: 30px;
+				color: rgba(255,255,255,0.5);
+				font-size: 30px;
+				font-weight: bold;
+				margin-top: 3px ;
+				line-height: 25px;
+				float:left;
+			}
+			
+			#shopSlider #span1{
+				margin-left: 300px;
+			}
+			#shopSlider ul li{
+				width: 24px;
+				height: 4px;
+				background: grey;
+				float: left;
+				margin-top: 16px ;
+				margin-right: 3px;
+				font-size: 0;
+			}
+		</style>
+		<script type="text/javascript">
+			function slider(){
+				window.clearInterval("_timer");
+				var _timer=0;
+				var _slid=document.getElementById("slid");
+				_timer=window.setInterval(function(){
+					_slid.style.left=_slid.offsetLeft-50+"px";
+					if(_slid.offsetLeft==-3100){
+						_slid.style.left=0+"px";
+					}
+				},100)
+			}
+			window.onload=slider;
+		</script>
+	</head>
+	<body>
+		<div id="shopSlider">
+			<div id="slid">
+				<img src="../images/game0.jpg" >
+				<img src="../images/game1.jpg" >
+				<img src="../images/game2.jpg" >
+				<img src="../images/game3.jpg" >
+				<img src="../images/game4.jpg" >
+			</div>
+			<div id="buttWrap">
+				<span id="span1"><</span>
+				<div id="Sbutt">
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+					</ul>
+				</div>
+				<span>></span>
+			</div>
+		</div>
+	</body>
+</html>

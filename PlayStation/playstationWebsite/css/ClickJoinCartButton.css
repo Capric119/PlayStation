@@ -1,0 +1,14 @@
+
+#Bigger{
+    width: 100%;
+    height: 100%;
+    position: absolute;left: 0;top: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+}
+#Big{
+    width: 500px;
+    height: 300px;
+    background: white;
+    position: absolute;left: 300px;top: 200px;
+}
